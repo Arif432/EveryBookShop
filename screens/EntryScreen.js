@@ -38,7 +38,7 @@ const EntryScreen = ({route , navigation}) => {
 
           {/* buttons LOG SIGN*/}
         <View className="mb-10 p-6">
-          <PrimaryButtonComponent label={"LOGIN"} navigation={navigation}/>
+          <PrimaryButtonComponent label={"LOGIN"} navigation={navigation} screen={"LoginScreen"}/>
           <SecondaryButtonComponent label={"SIGNUP"} navigation={navigation} border={true}/>
         </View>
 

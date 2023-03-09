@@ -1,24 +1,25 @@
-import { View, Text,TouchableOpacity } from 'react-native'
+import { View, Text,TouchableOpacity, ScrollView } from 'react-native'
 import React from 'react'
 
-const SecondaryButtonComponent = ({label ,navigation,border}) => {
+const SecondaryButtonComponent = ({label ,navigation,border, extraText,screen}) => {
 
     if(border){
     return (
       <TouchableOpacity className="border border-white h-14 justify-center m-4 rounded-lg"
-           onPress={()=>navigation.navigate("SignupScreen")}
-          >
+           onPress={()=>navigation.navigate({name : screen})}>
             <Text className="text-center text-white text-xl font-light">{label}</Text>
       </TouchableOpacity>
   )
     }
     else {
         return(
-         <TouchableOpacity className="justify-center h-10"
-           onPress={()=>navigation.navigate("SignupScreen")}
-          >
-            <Text className="text-center text-white text-lg font-light">{label}</Text>
-      </TouchableOpacity>
+          <View className="flex-row justify-center">
+            <Text className=" text-[#BBBEC0] text-sm font-light">{extraText} </Text>
+            <TouchableOpacity
+            onPress={()=>navigation.navigate({name : screen})}>
+            <Text className="text-[#BBBEC0] text-md font-light"> {label}</Text>
+            </TouchableOpacity>
+          </View>
         )
     }
 }
