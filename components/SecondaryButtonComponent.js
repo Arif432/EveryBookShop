@@ -5,20 +5,26 @@ const SecondaryButtonComponent = ({label ,navigation,border, extraText,screen}) 
 
     if(border){
     return (
+
       <TouchableOpacity className="border border-white h-14 justify-center m-4 rounded-lg"
-           onPress={()=>navigation.navigate({name : screen})}>
+           onPress={()=>navigation.navigate("SignupScreen")}>
             <Text className="text-center text-white text-xl font-light">{label}</Text>
       </TouchableOpacity>
   )
     }
+
     else {
+
         return(
-          <View className="flex-row justify-center">
-            <Text className=" text-[#BBBEC0] text-sm font-light">{extraText} </Text>
+         
+         <View className="flex-row justify-center">
+            <Text className=" text-[#a2a5a7] text-sm font-light">{extraText} </Text>
+         
             <TouchableOpacity
-            onPress={()=>navigation.navigate({name : screen})}>
-            <Text className="text-[#BBBEC0] text-md font-light"> {label}</Text>
+            onPress={()=>navigation.navigate({name:screen})}>
+            <Text className="text-[#a2a5a7] text-md font-light"> {label}</Text>
             </TouchableOpacity>
+         
           </View>
         )
     }
