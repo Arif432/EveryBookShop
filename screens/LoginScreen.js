@@ -1,6 +1,4 @@
-import { View, Text ,ImageBackground, TouchableOpacity} from 'react-native'
-
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
+import { View, Text ,ImageBackground, TouchableOpacity,StatusBar} from 'react-native'
 import React from 'react'
 import InputComponent from '../components/InputComponent'
 import LoginImg from "../assets/firstImg.jpg"
@@ -9,11 +7,11 @@ import SecondaryButtonComponent from '../components/SecondaryButtonComponent'
 
 const LoginScreen = ({navigation}) => {
   return (
-    <View className="flex-1">
-      <ImageBackground 
+      <ImageBackground
       source={LoginImg} 
       className="flex-1"
       resizeMode='cover'>
+     
 
         <View className="h-[58vh] mt-32 rounded-3xl opacity-75 bg-black">
           
@@ -35,7 +33,6 @@ const LoginScreen = ({navigation}) => {
      
       </ImageBackground>
       
-      </View>
   )
 }
 

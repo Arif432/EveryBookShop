@@ -5,8 +5,7 @@ const NavBarComponent = ({label,heading,info}) => {
   return (
 
     <View>
-
-      <View className="mt-8">
+      <View>
         <Text className="text-xl font-bold m-3 mb-0">{label}</Text>
       </View>
 
