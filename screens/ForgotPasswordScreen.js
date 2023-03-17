@@ -9,7 +9,7 @@ const ForgotPasswordScreen = ({navigation}) => {
     <View>
       
       <NavBarComponent label={"Forgot Password"} heading={"Enter Email"} info={"We need to verify you"}/>
-      <InputComponent placeholder={"E-mail"}/>
+      <InputComponent placeholder={"E-mail"} icon="mail"/>
       <PrimaryButtonComponent label={"Send OTP"} screen={"ResetPasswordScreen"} navigation={navigation}/>
 
     </View>

@@ -8,8 +8,6 @@ import HomeScreen from './HomeScreen'
 import CategoriesScreen from './CategoriesScreen';
 import { Icon } from '@rneui/themed'
 
-
-
 const Tab = createBottomTabNavigator();
 
 const MainScreen = () => {
@@ -56,17 +54,12 @@ const MainScreen = () => {
 
         
       },
-    })}
-  >
-
+    })}>
 
           <Tab.Screen
-            name='Home'
-            
-            options={{headerShown: false}}
-            component={HomeScreen}
-            >
-          
+          name='Home'
+          options={{headerShown: false}}
+          component={HomeScreen}>
           </Tab.Screen>
 
           <Tab.Screen

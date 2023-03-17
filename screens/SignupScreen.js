@@ -14,17 +14,18 @@ const SignupScreen = ({navigation}) => {
       
         <View className="mt-[-40]">
 
+
           <Text className="text-lg font-medium ml-4">Email</Text>
-          <InputComponent placeholder={"E-mail"}/>
+          <InputComponent placeholder={"E-mail"} icon="mail"/>
 
           <Text className="text-lg font-medium ml-4">Name</Text>
-          <InputComponent placeholder={"Name"}/>
+          <InputComponent placeholder={"Name"} icon="person"/>
 
           <Text className="text-lg font-medium ml-4">Password</Text>
-          <InputComponent placeholder={"Password"}/>
+          <InputComponent placeholder={"Password"} icon={"lock"} password={true}/>
 
           <Text className="text-lg font-medium ml-4">Confirm Password</Text>
-          <InputComponent placeholder={"Confirm Password"}/>
+          <InputComponent placeholder={"Confirm Password"} icon={"lock"} password={true}/>
 
           <PrimaryButtonComponent label={"Create Account"} screen={"LoginScreen"} navigation={navigation}/>
 

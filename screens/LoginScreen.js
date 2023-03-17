@@ -19,8 +19,8 @@ const LoginScreen = ({navigation}) => {
           <Text className="text-sm text-center font-light text-[#aeb0b2] mb-4">Login to your account</Text>
 
           <View className="flex-1">
-            <InputComponent placeholder={"E-mail"}/>
-            <InputComponent placeholder={"Password"} password={true}/>
+            <InputComponent placeholder={"E-mail"} icon={"mail"}/>
+            <InputComponent placeholder={"Password"} icon={"lock"} password={true}/>
           </View>
 
           <View className="flex-1 mb-10">
@@ -37,3 +37,4 @@ const LoginScreen = ({navigation}) => {
 }
 
 export default LoginScreen
+

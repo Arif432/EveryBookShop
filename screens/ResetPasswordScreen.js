@@ -11,10 +11,10 @@ const ResetPasswordScreen = ({navigation}) => {
 
       <View className="mt-[-4]">
         <Text className="text-lg font-medium ml-4">Password</Text>
-        <InputComponent placeholder={"create password"}/>
+        <InputComponent placeholder={"create password"} icon="lock" password={true}/>
 
         <Text className="text-lg font-medium ml-4">Confirm Password</Text>
-        <InputComponent placeholder={"confirm password"}/>
+        <InputComponent placeholder={"confirm password"} icon="lock" password={true}/>
 
         <PrimaryButtonComponent label={"Done"} screen={"LoginScreen"} navigation={navigation}/>
       </View>
