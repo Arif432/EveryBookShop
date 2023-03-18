@@ -7,6 +7,7 @@ const GetApiCustomHook = (link) => {
   const getBooks = async () => {
     try {
       const response = await axios.get(link);
+      
       // console.log("response.data==", response.data);
       setBooks(response.data.movies);
     } catch (error) {

@@ -25,7 +25,7 @@ const LoginScreen = ({navigation}) => {
 
           <View className="flex-1 mb-10">
             <TouchableOpacity onPress={()=>navigation.navigate("ForgotPasswordScreen")}><Text className="text-white mr-6  text-right text-sm font-extralight">forgot Password</Text></TouchableOpacity>
-            <PrimaryButtonComponent label={"LOGIN"} navigation={navigation} screen={"MainScreen"}/>
+            <PrimaryButtonComponent label={"LOGIN"} navigation={navigation} screen={"MainScreen"} />
             <SecondaryButtonComponent label={"Signup"} navigation={navigation} screen={"SignupScreen"}  border={false} extraText={"new on EveryBook?"}/>
           </View>
 

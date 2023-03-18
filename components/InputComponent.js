@@ -1,15 +1,9 @@
-import { View, Text, TextInput, ScrollView } from 'react-native'
 import React from 'react'
-import { SearchBar } from '@rneui/themed';
+import { View } from 'react-native';
 import { Input } from 'react-native-elements';
-
-import {
-    ChevronDownIcon,Bars3Icon,
-    UserIcon, MagnifyingGlassIcon} from "react-native-heroicons/outline"
 import { Icon } from '@rneui/themed'
 
-
-const InputComponent = ({placeholder, icon ,password}) => {
+const InputComponent = ({placeholder, icon ,password, onChangeText}) => {
   return (
     <View 
     className="h-14 text-sm justify-center text-center m-2 pt-6 pl-2 mr-4 ml-4 rounded-lg bg-white">
@@ -17,6 +11,7 @@ const InputComponent = ({placeholder, icon ,password}) => {
        <Input
         className="ml-2"
         placeholder={placeholder}
+        onChangeText={onChangeText}
         secureTextEntry={password ? true : false}
         inputContainerStyle={{borderBottomWidth:0}}
 
@@ -35,4 +30,4 @@ const InputComponent = ({placeholder, icon ,password}) => {
   )
 }
 
-export default InputComponent
+export default InputComponent 

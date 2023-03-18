@@ -10,7 +10,7 @@ export default function HomeScreen () {
   return (
       <View>
         <InputComponent icon={"search"} placeholder="search item"/>
-        <BooksNamesFlatList data={books}  />
+        <BooksNamesFlatList data={books}/>
       </View>
   );
 }
