@@ -1,7 +1,7 @@
 import { View, Text, ImageBackground, TouchableOpacity, StatusBar } from 'react-native';
 import launchImg from '../assets/background.jpg';
-import PrimaryButtonComponent from '../components/PrimaryButtonComponent';
-import SecondaryButtonComponent from '../components/SecondaryButtonComponent';
+import PrimaryButtonComponent from '../components/Buttons/PrimaryButtonComponent';
+import SecondaryButtonComponent from '../components/Buttons/SecondaryButtonComponent';
 
 const EntryScreen = ({ route, navigation }) => {
   return (
@@ -13,7 +13,7 @@ const EntryScreen = ({ route, navigation }) => {
       <StatusBar backgroundColor="#67B7F4" barStyle="light-content" />
 
       <TouchableOpacity
-        className="m-12 mr-6"
+        className="mt-8 mb-12 mr-6"
         onPress={() => navigation.navigate('MainScreen')}>
 
         <Text className="text-xs font-extralight text-white text-right">Skip</Text>

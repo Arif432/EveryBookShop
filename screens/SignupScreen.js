@@ -2,9 +2,9 @@ import { View, Text } from 'react-native';
 import React from 'react';
 import NavBarComponent from '../components/NavBarComponent';
 import InputComponent from '../components/InputComponent';
-import PrimaryButtonComponent from '../components/PrimaryButtonComponent';
-import SecondaryButtonComponent from '../components/SecondaryButtonComponent';
-import usePostApi from '../components/usePostApi';
+import PrimaryButtonComponent from '../components/Buttons/PrimaryButtonComponent';
+import SecondaryButtonComponent from '../components/Buttons/SecondaryButtonComponent';
+import usePostApi from '../components/CustomHooks/usePostApi';
 
 const SignupScreen = ({ navigation }) => {
   const [setEmail, setPassword,setName,postApi] = usePostApi(
