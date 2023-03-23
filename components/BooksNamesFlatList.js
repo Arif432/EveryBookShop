@@ -1,19 +1,28 @@
 import React from 'react';
 import { View, Text, FlatList } from 'react-native';
+import NewRelaeasesCard from './NewReleasesCard';
+import TitleDescription from './TitleDescription';
 
-const BooksNamesFlatList = ({ data }) => {
+const BooksNamesFlatList = ({ data ,title, description}) => {
   return (
-    <FlatList
-      data={data}
-      keyExtractor={({ id }) => id.toString()}
-      renderItem={({ item }) => (
-        <View>
-          <Text>{item.title}</Text>
-          <Text>{item.releaseYear}</Text>
-        </View>
-      )}
-    />
+    <View>
+      <TitleDescription title={title} description={description}/>
+      <FlatList
+      horizontal
+      showsHorizontalScrollIndicator={false}
+        data={data}
+        keyExtractor={({ id }) => id.toString()}
+        renderItem={({ item }) => (
+          <View>
+            <NewRelaeasesCard
+            title={item.title} 
+            releaseYear={item.releaseYear}/>
+          </View>
+        )}
+      />
+    </View>
   );
+  
 };
 
 export default BooksNamesFlatList

@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native';
+import { View, Text, ScrollView } from 'react-native';
 import React from 'react';
 import NavBarComponent from '../components/NavBarComponent';
 import InputComponent from '../components/InputComponent';
@@ -16,10 +16,11 @@ const SignupScreen = ({ navigation }) => {
   };
 
   return (
-    <View>
-      <NavBarComponent label={'Signup'} />
+      <ScrollView>
 
-      <View className="mt-[-40]">
+      <NavBarComponent label={'Signup'} heading="signup before continue?" info={"add your credentials"}/>
+
+      <View className="flex-1">
         <Text className="text-lg font-medium ml-4">Email</Text>
         <InputComponent 
         onChangeText={setEmail} 
@@ -59,7 +60,8 @@ const SignupScreen = ({ navigation }) => {
           extraText={'already on EveryBook?'}
         />
       </View>
-    </View>
+    </ScrollView>
+
   );
 };
 
