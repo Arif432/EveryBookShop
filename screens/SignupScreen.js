@@ -18,7 +18,7 @@ const SignupScreen = ({ navigation }) => {
   return (
       <ScrollView>
 
-      <NavBarComponent label={'Signup'} heading="signup before continue?" info={"add your credentials"}/>
+      <NavBarComponent label={'Signup'} heading="New to EveryBook?" info={"get registered to become member"}/>
 
       <View className="flex-1">
         <Text className="text-lg font-medium ml-4">Email</Text>

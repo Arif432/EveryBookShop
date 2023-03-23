@@ -7,9 +7,9 @@ import PrimaryButtonComponent from '../components/Buttons/PrimaryButtonComponent
 const ResetPasswordScreen = ({navigation}) => {
   return (
     <View>
-      <NavBarComponent label={"Reset Password"} info={"Please Fill in the fields to reset your password"}/>
+      <NavBarComponent label={"Reset Password"} heading={"create new password"} info={"Please Fill in the fields to reset your password"}/>
 
-      <View className="mt-[-4]">
+      <View>
         <Text className="text-lg font-medium ml-4">Password</Text>
         <InputComponent placeholder={"create password"} icon="lock" password={true}/>
 

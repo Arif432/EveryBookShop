@@ -8,6 +8,7 @@ const EntryScreen = ({ route, navigation }) => {
     <ImageBackground
       resizeMode="cover"
       className="flex-1"
+      blurRadius={5}
       source={launchImg}>
 
       <StatusBar backgroundColor="#67B7F4" barStyle="light-content" />
@@ -19,18 +20,18 @@ const EntryScreen = ({ route, navigation }) => {
         <Text className="text-xs font-extralight text-white text-right">Skip</Text>
       </TouchableOpacity>
         
-        <Text className="text-6xl mt-6 text-white text-center font-extralight">EveryBook</Text>
+        <Text className="text-6xl mt-4 text-white text-center font-extralight">EveryBook</Text>
       
-      <View className="flex-1 justify-end">
-        <View>
-          {/* Intro text quote */}
-          <Text className="text-2xl font-light p-1 text-white text-center">
-            "There is no friend as loyal as a book." - Ernest Hemingway
+          <Text className="text-xl tracking-wider leading-10 mt-5 p-8 pt-1 text-white text-center">
+            "There is no friend as loyal as a book."  -Ernest Hemingway
           </Text>
 
+      <View className="flex-1 justify-end ">
+        <View>
+
           {/* Intro text about */}
-          <Text className="text-white text-xs font-light text-center mt-2">
-            <Text className="font-bold">{route.name}</Text> app will facilitate you make books transactions like buying, selling, lending, and borrowing books.
+          <Text className="text-white text-xs font-light p-8 pb-0 text-center mt-2">
+            <Text className="font-bold tracking-widest leading-10 ">{route.name}</Text> app will facilitate you make books transactions like buying, selling, lending, and borrowing books.
           </Text>
         </View>
 
